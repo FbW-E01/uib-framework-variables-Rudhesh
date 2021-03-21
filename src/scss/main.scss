@@ -1,2 +1,159 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+$colorone: #016690;
+
+nav ul {
+    position: fixed;
+    background: #ffffff;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+
+    list-style-type: none;
+    // text-align: end;
+   
+    li {
+        // display: inline-flex;
+        padding: 20px;
+       
+        color: $colorone;
+
+    }   
+    
+    
+}
+
+
+
+   .hero {
+
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+
+}
+
+h1 {
+    
+    text-align: center;
+    padding-top: 200px;
+    font-weight: bold;
+}
+
+
+
+.container1 {
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    
+}
+
+section {
+
+    background-color: #e0ddb2;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    flex-basis: 700px;
+    border-radius: 5px;
+    
+    div {
+
+        padding: 5px;
+    }
+
+    p{
+
+        line-height: 1em;
+    }
+    
+}
+
+
+.container2 {
+
+    display: grid;
+    grid: 1fr/1fr 2fr 1fr;
+
+    aside {
+
+        border: #dad6ab 1px solid;
+        border-radius:5px;
+        padding: 10px;
+
+    }
+
+    article {
+
+        padding: 10px;
+    }
+  
+    
+}
+
+footer ul {
+
+    text-align: center;
+    background-color: blue;
+    
+    li {
+        display: inline-block;
+        padding: 20px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav ul {
+        position: fixed;
+        background: #ffffff;
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    
+    
+        list-style-type: none;
+        // text-align: end;
+       
+        li {
+            // display: inline-flex;
+            padding: 20px;
+           
+            color: $colorone;
+    
+        }   
+        
+        
+    }
+
+    .container2 {
+      display: block;
+      margin: 20px;
+    }
+
+    .container1 {
+        display: flex;
+
+        section {
+            background-color: rgb(212, 212, 158);
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            flex-basis: 200px;
+            border-radius: 5px
+         }
+
+        
+      }
+  }
